@@ -24,4 +24,17 @@ public class Polygon
    {
       points.add(nextPoint);
    }
+
+   /**
+    * Returns a String with all the points in the polygon
+    */
+   public String toString()
+   {
+      String output = new String();
+      for (int i = 0; i < points.size(); i++)
+      {
+         output+= points.get(i);
+      }
+      return output;
+   }
 }
